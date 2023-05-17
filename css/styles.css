@@ -22,7 +22,7 @@
 
 body {
    
-    padding-top: 72px;
+    padding-top: 50px;
 
     background-color: var(--color-white);
     color:var(--color-slate);
@@ -197,19 +197,28 @@ textarea {
 
 .logo {
     display: block;
-    padding: 24px 0;    
+    
     outline: none;  
     
-    font-family: Raleway, sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+/* identical to box height, or 129% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.04em;
     text-transform: uppercase;
 
-    color: var(--color-iris);
+    color: #AE1332;
 }
 
+.logo-icon{
+    margin-right: 8px;
+}
 /**
   |============================
   | Title
@@ -270,39 +279,27 @@ textarea {
 .header {
 
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     z-index: 999;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 16px;
+    padding: 0 20px;
 
     top: 0;
     left: 0;
-    min-height: 72px;
-    border-bottom: 1px solid var(--color-cornflower);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 1px 6px rgba(46, 47, 66, 0.08);
-
+    min-height: 50px;
+   
     background-color: var(--color-white);
 }
 
-.main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-
-    @media screen and (min-width: 1158px) {
-            .main-nav {
-                max-width: 1158px;
-                padding-left: 15px;
-                padding-right: 15px;
-                margin: 0 auto;
-            }
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 0 32px;
     }
+}
 
 .menu-container-desktop {
     display: flex;
@@ -324,18 +321,17 @@ textarea {
 
 
 .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-navy-blue);
+ 
     margin: 0;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
     border: none;
-    border-radius: 50%;
+ 
     outline: none;
 }
 
